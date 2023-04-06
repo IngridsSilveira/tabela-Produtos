@@ -1,5 +1,5 @@
 const configDgv = {
-  endpoint: "http://localhost:3000/produtos",
+  endpoint: "https://raw.githubusercontent.com/IngridsSilveira/tabela-Produtos/main/produtos.json",
   idDestino: "dgvDados",
 };
 
@@ -8,7 +8,8 @@ const dataGridView = (configDgv) => {
   fetch(configDgv.endpoint)
     .then((res) => res.json())
     .then((res) => {
-      res.forEach((el) => {
+      const produtos = res.produtos
+      produtos.forEach((el) => {
         const dgvLinha = document.createElement("div");
         dgvLinha.innerHTML = "";
         dgvLinha.setAttribute("class", "dgvLinha");
