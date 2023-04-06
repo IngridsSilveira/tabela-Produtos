@@ -1,0 +1,34 @@
+{
+  "produtos": [
+    {
+      "produto": "Processador",
+      "marca": "Intel",
+      "modelo": "i7",
+      "id": 1
+    },
+    {
+      "produto": "Mouse",
+      "marca": "Logitech",
+      "modelo": "M90",
+      "id": 2
+    },
+    {
+      "id": 4,
+      "produto": "Monitor",
+      "marca": "Samsung",
+      "modelo": "Syncmaster"
+    },
+    {
+      "produto": "Celular",
+      "marca": "Xiaomi",
+      "modelo": "Poco F1",
+      "id": 82
+    },
+    {
+      "produto": "Celular",
+      "marca": "Samsung",
+      "modelo": "A22",
+      "id": 5
+    }
+  ]
+}

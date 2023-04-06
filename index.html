@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Tabela de Produtos</h1>
+        <div>
+            <button id="btn_add">
+                Adicionar
+            </button>
+            <button id="btn_login">Login</button>
+            <button id="btn_logout">Sair</button>
+        </div>
+    </header>
+    <div id="dgvProdutos" class="dgv">
+        <div id="dgvTitulos" class="dgvTitulos">
+            <div class="c1">ID</div>
+            <div class="c2">Produto</div>
+            <div class="c3">Marca</div>
+            <div class="c4">Modelo</div>
+            <div class="c5">Funções</div>
+        </div>
+        <div id="dgvDados" class="dgvDados">
+
+        </div>
+    </div>
+
+    <div id="janelaAdicionar" class="janelaView">
+        <div id="view" class="view">
+            <div class="campo">
+                <label>ID</label>
+                <input type="text" name="f_id_adicionar" id="f_id_adicionar" readonly>
+            </div>
+            <div class="campo">
+                <label>Produto</label>
+                <input type="text" name="f_produto_adicionar" id="f_produto_adicionar">
+            </div>
+            <div class="campo">
+                <label>Marca</label>
+                <input type="text" name="f_marca_adicionar" id="f_marca_adicionar">
+            </div>
+            <div class="campo">
+                <label>Modelo</label>
+                <input type="text" name="f_modelo_adicionar" id="f_modelo_adicionar">
+            </div>
+            <div id="rodape" class="rodape">
+                <button id="btn_adicionar" class="btn">Adicionar</button>
+                <button id="btn_cancelar1" class="btn">Cancelar</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="janelaView" class="janelaView">
+        <div id="view" class="view">
+            <div class="campo">
+                <label>ID</label>
+                <input type="text" name="f_id" id="f_id" readonly>
+            </div>
+            <div class="campo">
+                <label>Produto</label>
+                <input type="text" name="f_produto" id="f_produto" readonly>
+            </div>
+            <div class="campo">
+                <label>Marca</label>
+                <input type="text" name="f_marca" id="f_marca" readonly>
+            </div>
+            <div class="campo">
+                <label>Modelo</label>
+                <input type="text" name="f_modelo" id="f_modelo" readonly>
+            </div>
+            <div id="rodape" class="rodape">
+                <button id="btn_ok" class="btn">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="janelaEditar" class="janelaView">
+        <div id="view" class="view">
+            <div class="campo">
+                <label>ID</label>
+                <input type="text" name="f_id_editar" id="f_id_editar" readonly>
+            </div>
+            <div class="campo">
+                <label>Produto</label>
+                <input type="text" name="f_produto_editar" id="f_produto_editar">
+            </div>
+            <div class="campo">
+                <label>Marca</label>
+                <input type="text" name="f_marca_editar" id="f_marca_editar">
+            </div>
+            <div class="campo">
+                <label>Modelo</label>
+                <input type="text" name="f_modelo_editar" id="f_modelo_editar">
+            </div>
+            <div id="rodape" class="rodape">
+                <button id="btn_gravar" class="btn">Gravar</button>
+                <button id="btn_cancelar" class="btn">Cancelar</button>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footerBody">
+        <a href="https://ingriddev.netlify.app/">Desenvolvido por Ingrid de Souza</a>
+    </footer>
+
+    <script src="login.js" type="module"></script>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
